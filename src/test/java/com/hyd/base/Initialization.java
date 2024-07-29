@@ -13,7 +13,7 @@ public class Initialization {
 	public static WebDriver driver;
 
 	public String username = "harsha_chanti37@yahoo.co.in";
-	public String password = "Spandana37&";
+	public String password = "";
 
 	public void setup(String browserName) {
 		switch (browserName.toLowerCase()) {
