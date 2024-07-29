@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Facebook">
+	<parameter name="browserName" value="Chrome" />
+	<test name="FacebookLogin">
+		<classes>
+			<class name="com.hyd.tests.LoginPageTests">
+				<methods>
+					<include name="verifyLoginPageTitle" />
+					<include name="verifyLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FacebookHomePage">
+		<classes>
+			<class name="com.hyd.tests.HomePageTests">
+				<methods>
+					<include name="verifyHomePageTitle" />
+					<include name="verifyNavigationToFriends" />
+					<include name="verifyNavigationToMemories" />
+					<include name="verifyNavigationToSaved" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="FacebookFriendsPage">
+		<classes>
+			<class name="com.hyd.tests.FriendsPageTests">
+				<methods>
+					<include name="verifyFriendsPageTitle" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

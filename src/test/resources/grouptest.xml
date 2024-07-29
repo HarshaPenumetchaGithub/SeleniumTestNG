@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Facebook">
+	<parameter name="browserName" value="Chrome" />
+	<test name="FacebookLogin">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.hyd.tests.LoginPageTests" />
+		</classes>
+	</test>
+	<test name="FacebookHomePage">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.hyd.tests.HomePageTests" />
+		</classes>
+	</test>
+	<test name="FacebookFriendsPage">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.hyd.tests.FriendsPageTests" />
+		</classes>
+	</test>
+</suite>

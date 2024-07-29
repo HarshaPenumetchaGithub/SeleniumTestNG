@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-27T22:50:41 IST" name="Facebook" finished-at="2024-07-27T22:51:24 IST" duration-ms="42778">
+    <groups>
+      <group name="regression">
+        <method signature="LoginPageTests.verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLoginPageTitle" class="com.hyd.tests.LoginPageTests"/>
+        <method signature="LoginPageTests.verifyLogin()[pri:2, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLogin" class="com.hyd.tests.LoginPageTests"/>
+        <method signature="HomePageTests.verifyHomePageTitle()[pri:1, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyHomePageTitle" class="com.hyd.tests.HomePageTests"/>
+        <method signature="HomePageTests.verifyNavigationToFriends()[pri:2, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyNavigationToFriends" class="com.hyd.tests.HomePageTests"/>
+        <method signature="HomePageTests.verifyNavigationToMemories()[pri:3, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyNavigationToMemories" class="com.hyd.tests.HomePageTests"/>
+        <method signature="HomePageTests.verifyNavigationToSaved()[pri:4, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyNavigationToSaved" class="com.hyd.tests.HomePageTests"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginPageTests.verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLoginPageTitle" class="com.hyd.tests.LoginPageTests"/>
+        <method signature="LoginPageTests.verifyLogin()[pri:2, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLogin" class="com.hyd.tests.LoginPageTests"/>
+        <method signature="HomePageTests.verifyHomePageTitle()[pri:1, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyHomePageTitle" class="com.hyd.tests.HomePageTests"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2024-07-27T22:50:41 IST" name="FacebookLogin" finished-at="2024-07-27T22:50:53 IST" duration-ms="11728">
+      <class name="com.hyd.tests.LoginPageTests">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:42 IST" name="initialize" finished-at="2024-07-27T22:50:44 IST" duration-ms="2619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:44 IST" name="verifyLoginPageTitle" finished-at="2024-07-27T22:50:44 IST" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:44 IST" name="closure" finished-at="2024-07-27T22:50:45 IST" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:45 IST" name="initialize" finished-at="2024-07-27T22:50:47 IST" duration-ms="2137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyLogin()[pri:2, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:47 IST" name="verifyLogin" finished-at="2024-07-27T22:50:53 IST" depends-on-methods="com.hyd.tests.LoginPageTests.verifyLoginPageTitle" duration-ms="6077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:53 IST" name="closure" finished-at="2024-07-27T22:50:53 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- com.hyd.tests.LoginPageTests -->
+    </test> <!-- FacebookLogin -->
+    <test started-at="2024-07-27T22:50:53 IST" name="FacebookHomePage" finished-at="2024-07-27T22:51:24 IST" duration-ms="31042">
+      <class name="com.hyd.tests.HomePageTests">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:50:53 IST" name="initialize" finished-at="2024-07-27T22:50:55 IST" duration-ms="1964" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:50:55 IST" name="verifyHomePageTitle" finished-at="2024-07-27T22:51:00 IST" duration-ms="4875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:00 IST" name="closure" finished-at="2024-07-27T22:51:00 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:00 IST" name="initialize" finished-at="2024-07-27T22:51:02 IST" duration-ms="1551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyNavigationToFriends()[pri:2, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:02 IST" name="verifyNavigationToFriends" finished-at="2024-07-27T22:51:08 IST" duration-ms="5941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToFriends -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:08 IST" name="closure" finished-at="2024-07-27T22:51:08 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:08 IST" name="initialize" finished-at="2024-07-27T22:51:09 IST" duration-ms="1317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyNavigationToMemories()[pri:3, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:09 IST" name="verifyNavigationToMemories" finished-at="2024-07-27T22:51:15 IST" duration-ms="5907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToMemories -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:15 IST" name="closure" finished-at="2024-07-27T22:51:16 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:16 IST" name="initialize" finished-at="2024-07-27T22:51:18 IST" duration-ms="1826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyNavigationToSaved()[pri:4, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:18 IST" name="verifyNavigationToSaved" finished-at="2024-07-27T22:51:24 IST" duration-ms="6516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToSaved -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:24 IST" name="closure" finished-at="2024-07-27T22:51:24 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- com.hyd.tests.HomePageTests -->
+    </test> <!-- FacebookHomePage -->
+  </suite> <!-- Facebook -->
+</testng-results>
