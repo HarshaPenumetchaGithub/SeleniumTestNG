@@ -2,16 +2,41 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Facebook]" guice-stage="DEVELOPMENT">
   <parameter name="browserName" value="Chrome"/>
+  <test thread-count="5" name="FacebookLogin(failed)">
+    <classes>
+      <class name="com.hyd.tests.LoginPageTests">
+        <methods>
+          <include name="verifyLogin"/>
+          <include name="initialize"/>
+          <include name="verifyLoginPageTitle"/>
+          <include name="closure"/>
+        </methods>
+      </class> <!-- com.hyd.tests.LoginPageTests -->
+    </classes>
+  </test> <!-- FacebookLogin(failed) -->
   <test thread-count="5" name="FacebookHomePage(failed)">
     <classes>
       <class name="com.hyd.tests.HomePageTests">
         <methods>
           <include name="verifyNavigationToSaved"/>
+          <include name="verifyNavigationToMemories"/>
           <include name="verifyNavigationToFriends"/>
+          <include name="verifyHomePageTitle"/>
           <include name="closure"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- com.hyd.tests.HomePageTests -->
     </classes>
   </test> <!-- FacebookHomePage(failed) -->
+  <test thread-count="5" name="FacebookFriendsPage(failed)">
+    <classes>
+      <class name="com.hyd.tests.FriendsPageTests">
+        <methods>
+          <include name="closure"/>
+          <include name="verifyFriendsPageTitle"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.hyd.tests.FriendsPageTests -->
+    </classes>
+  </test> <!-- FacebookFriendsPage(failed) -->
 </suite> <!-- Failed suite [Facebook] -->

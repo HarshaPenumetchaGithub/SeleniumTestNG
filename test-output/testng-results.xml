@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-27T22:50:41 IST" name="Facebook" finished-at="2024-07-27T22:51:24 IST" duration-ms="42778">
+  <suite started-at="2024-07-29T13:54:13 IST" name="Facebook" finished-at="2024-07-29T13:55:03 IST" duration-ms="50016">
     <groups>
       <group name="regression">
         <method signature="LoginPageTests.verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLoginPageTitle" class="com.hyd.tests.LoginPageTests"/>
@@ -11,16 +11,18 @@
         <method signature="HomePageTests.verifyNavigationToFriends()[pri:2, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyNavigationToFriends" class="com.hyd.tests.HomePageTests"/>
         <method signature="HomePageTests.verifyNavigationToMemories()[pri:3, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyNavigationToMemories" class="com.hyd.tests.HomePageTests"/>
         <method signature="HomePageTests.verifyNavigationToSaved()[pri:4, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyNavigationToSaved" class="com.hyd.tests.HomePageTests"/>
+        <method signature="FriendsPageTests.verifyFriendsPageTitle()[pri:0, instance:com.hyd.tests.FriendsPageTests@4c39bec8]" name="verifyFriendsPageTitle" class="com.hyd.tests.FriendsPageTests"/>
       </group> <!-- regression -->
       <group name="smoke">
         <method signature="LoginPageTests.verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLoginPageTitle" class="com.hyd.tests.LoginPageTests"/>
         <method signature="LoginPageTests.verifyLogin()[pri:2, instance:com.hyd.tests.LoginPageTests@54d9d12d]" name="verifyLogin" class="com.hyd.tests.LoginPageTests"/>
         <method signature="HomePageTests.verifyHomePageTitle()[pri:1, instance:com.hyd.tests.HomePageTests@291caca8]" name="verifyHomePageTitle" class="com.hyd.tests.HomePageTests"/>
+        <method signature="FriendsPageTests.verifyFriendsPageTitle()[pri:0, instance:com.hyd.tests.FriendsPageTests@4c39bec8]" name="verifyFriendsPageTitle" class="com.hyd.tests.FriendsPageTests"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-07-27T22:50:41 IST" name="FacebookLogin" finished-at="2024-07-27T22:50:53 IST" duration-ms="11728">
+    <test started-at="2024-07-29T13:54:13 IST" name="FacebookLogin" finished-at="2024-07-29T13:54:23 IST" duration-ms="9497">
       <class name="com.hyd.tests.LoginPageTests">
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:42 IST" name="initialize" finished-at="2024-07-27T22:50:44 IST" duration-ms="2619" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-29T13:54:13 IST" name="initialize" finished-at="2024-07-29T13:54:16 IST" duration-ms="2656" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:44 IST" name="verifyLoginPageTitle" finished-at="2024-07-27T22:50:44 IST" duration-ms="51" status="PASS">
+        <test-method signature="verifyLoginPageTitle()[pri:1, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-29T13:54:16 IST" name="verifyLoginPageTitle" finished-at="2024-07-29T13:54:16 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPageTitle -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:44 IST" name="closure" finished-at="2024-07-27T22:50:45 IST" duration-ms="500" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-29T13:54:16 IST" name="closure" finished-at="2024-07-29T13:54:16 IST" duration-ms="140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:45 IST" name="initialize" finished-at="2024-07-27T22:50:47 IST" duration-ms="2137" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-29T13:54:16 IST" name="initialize" finished-at="2024-07-29T13:54:18 IST" duration-ms="1790" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,19 +52,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyLogin()[pri:2, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:47 IST" name="verifyLogin" finished-at="2024-07-27T22:50:53 IST" depends-on-methods="com.hyd.tests.LoginPageTests.verifyLoginPageTitle" duration-ms="6077" status="PASS">
+        <test-method signature="verifyLogin()[pri:2, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-29T13:54:18 IST" name="verifyLogin" finished-at="2024-07-29T13:54:22 IST" depends-on-methods="com.hyd.tests.LoginPageTests.verifyLoginPageTitle" duration-ms="4208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-27T22:50:53 IST" name="closure" finished-at="2024-07-27T22:50:53 IST" duration-ms="303" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.LoginPageTests@54d9d12d]" started-at="2024-07-29T13:54:22 IST" name="closure" finished-at="2024-07-29T13:54:23 IST" duration-ms="574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
       </class> <!-- com.hyd.tests.LoginPageTests -->
     </test> <!-- FacebookLogin -->
-    <test started-at="2024-07-27T22:50:53 IST" name="FacebookHomePage" finished-at="2024-07-27T22:51:24 IST" duration-ms="31042">
+    <test started-at="2024-07-29T13:54:23 IST" name="FacebookHomePage" finished-at="2024-07-29T13:54:55 IST" duration-ms="32548">
       <class name="com.hyd.tests.HomePageTests">
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:50:53 IST" name="initialize" finished-at="2024-07-27T22:50:55 IST" duration-ms="1964" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:23 IST" name="initialize" finished-at="2024-07-29T13:54:26 IST" duration-ms="2786" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyHomePageTitle()[pri:1, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:50:55 IST" name="verifyHomePageTitle" finished-at="2024-07-27T22:51:00 IST" duration-ms="4875" status="PASS">
+        <test-method signature="verifyHomePageTitle()[pri:1, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:26 IST" name="verifyHomePageTitle" finished-at="2024-07-29T13:54:31 IST" duration-ms="5146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:00 IST" name="closure" finished-at="2024-07-27T22:51:00 IST" duration-ms="348" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:31 IST" name="closure" finished-at="2024-07-29T13:54:31 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:00 IST" name="initialize" finished-at="2024-07-27T22:51:02 IST" duration-ms="1551" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:31 IST" name="initialize" finished-at="2024-07-29T13:54:33 IST" duration-ms="1915" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,15 +94,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyNavigationToFriends()[pri:2, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:02 IST" name="verifyNavigationToFriends" finished-at="2024-07-27T22:51:08 IST" duration-ms="5941" status="PASS">
+        <test-method signature="verifyNavigationToFriends()[pri:2, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:33 IST" name="verifyNavigationToFriends" finished-at="2024-07-29T13:54:39 IST" duration-ms="6320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigationToFriends -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:08 IST" name="closure" finished-at="2024-07-27T22:51:08 IST" duration-ms="264" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:39 IST" name="closure" finished-at="2024-07-29T13:54:40 IST" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:08 IST" name="initialize" finished-at="2024-07-27T22:51:09 IST" duration-ms="1317" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:40 IST" name="initialize" finished-at="2024-07-29T13:54:41 IST" duration-ms="1859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,15 +113,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyNavigationToMemories()[pri:3, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:09 IST" name="verifyNavigationToMemories" finished-at="2024-07-27T22:51:15 IST" duration-ms="5907" status="PASS">
+        <test-method signature="verifyNavigationToMemories()[pri:3, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:41 IST" name="verifyNavigationToMemories" finished-at="2024-07-29T13:54:47 IST" duration-ms="5803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigationToMemories -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:15 IST" name="closure" finished-at="2024-07-27T22:51:16 IST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:47 IST" name="closure" finished-at="2024-07-29T13:54:47 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
-        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:16 IST" name="initialize" finished-at="2024-07-27T22:51:18 IST" duration-ms="1826" status="PASS">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:47 IST" name="initialize" finished-at="2024-07-29T13:54:49 IST" duration-ms="1988" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,15 +132,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyNavigationToSaved()[pri:4, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:18 IST" name="verifyNavigationToSaved" finished-at="2024-07-27T22:51:24 IST" duration-ms="6516" status="PASS">
+        <test-method signature="verifyNavigationToSaved()[pri:4, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:49 IST" name="verifyNavigationToSaved" finished-at="2024-07-29T13:54:55 IST" duration-ms="5724" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavigationToSaved -->
-        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-27T22:51:24 IST" name="closure" finished-at="2024-07-27T22:51:24 IST" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.HomePageTests@291caca8]" started-at="2024-07-29T13:54:55 IST" name="closure" finished-at="2024-07-29T13:54:55 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closure -->
       </class> <!-- com.hyd.tests.HomePageTests -->
     </test> <!-- FacebookHomePage -->
+    <test started-at="2024-07-29T13:54:55 IST" name="FacebookFriendsPage" finished-at="2024-07-29T13:55:03 IST" duration-ms="7929">
+      <class name="com.hyd.tests.FriendsPageTests">
+        <test-method is-config="true" signature="initialize(java.lang.String)[pri:0, instance:com.hyd.tests.FriendsPageTests@4c39bec8]" started-at="2024-07-29T13:54:55 IST" name="initialize" finished-at="2024-07-29T13:54:58 IST" duration-ms="2147" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyFriendsPageTitle()[pri:0, instance:com.hyd.tests.FriendsPageTests@4c39bec8]" started-at="2024-07-29T13:54:58 IST" name="verifyFriendsPageTitle" finished-at="2024-07-29T13:55:03 IST" duration-ms="5555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFriendsPageTitle -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:com.hyd.tests.FriendsPageTests@4c39bec8]" started-at="2024-07-29T13:55:03 IST" name="closure" finished-at="2024-07-29T13:55:03 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- com.hyd.tests.FriendsPageTests -->
+    </test> <!-- FacebookFriendsPage -->
   </suite> <!-- Facebook -->
 </testng-results>
