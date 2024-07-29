@@ -31,6 +31,6 @@
 					<include name="verifyFriendsPageTitle" />
 				</methods>
 			</class>
-		</classes>
+			</classes>
 	</test>
 </suite>

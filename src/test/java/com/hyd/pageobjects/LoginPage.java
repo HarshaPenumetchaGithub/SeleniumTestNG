@@ -4,12 +4,12 @@ import com.hyd.utilities.*;
 
 import org.openqa.selenium.By;
 
-public class LoginPage extends Helpers{
+public class LoginPage extends Helpers {
 
 	public By inputUsername = By.xpath("//input[@id='email']");
 	public By inputPassword = By.xpath("//input[@id='pass']");
 	public By buttonLogin = By.xpath("//button[@name='login']");
-	
+
 	public void Login(String username, String password) {
 		click(inputUsername);
 		sendKeys(inputUsername, username);

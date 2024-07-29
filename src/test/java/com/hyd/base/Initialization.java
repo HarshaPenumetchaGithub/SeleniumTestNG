@@ -6,9 +6,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.hyd.utilities.Reporters;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Initialization {
+public class Initialization extends Reporters {
 
 	public static WebDriver driver;
 
@@ -23,12 +25,12 @@ public class Initialization {
 			options.addArguments("disable-notifications");
 			driver = new ChromeDriver(options);
 			break;
-			
+
 		case "edge":
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 			break;
-			
+
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
