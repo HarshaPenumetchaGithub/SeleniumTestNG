@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Facebook">
 	<parameter name="browserName" value="Chrome" />
+	<listeners>
+		<listener class-name="com.hyd.utilities.ExtentTestNGITestListener"/>
+	</listeners>
 	<test name="FacebookLogin">
 		<groups>
 			<run>
