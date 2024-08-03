@@ -9,15 +9,18 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Reporters {
 
-	public static ExtentReports extentReports;
+	private static ExtentReports extentReports;
 
-	public void Reports() {
-		extentReports = new ExtentReports();
-		extentReports.setSystemInfo("os", System.getProperty("os.name"));
-		extentReports.attachReporter(CreateSparkReporter(".\\TestReports\\TestReport.html"));
+	public static ExtentReports Reports(String filePath) {
+		if (extentReports == null) {
+			extentReports = new ExtentReports();
+			extentReports.setSystemInfo("os", System.getProperty("os.name"));
+			extentReports.attachReporter(CreateSparkReporter(filePath));
+		}
+		return extentReports;
 	}
 
-	public ExtentSparkReporter CreateSparkReporter(String filePath) {
+	public static ExtentSparkReporter CreateSparkReporter(String filePath) {
 		ExtentSparkReporter extentSparkReporter = new ExtentSparkReporter(filePath);
 
 		// Report Configurations
@@ -29,15 +32,15 @@ public class Reporters {
 		return extentSparkReporter;
 	}
 
-	public void GenerateReport() {
+	public static void GenerateReport() {
 		extentReports.flush();
 	}
 
-	public void ViewTestReport() throws Exception {
+	public static void ViewTestReport(String filePath) {
 		try {
-			Desktop.getDesktop().browse(new File(".\\TestReports\\TestReport.html").toURI());
+			Desktop.getDesktop().browse(new File(filePath).toURI());
 		} catch (Exception e) {
-			System.err.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }

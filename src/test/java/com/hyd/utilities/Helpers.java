@@ -42,5 +42,4 @@ public class Helpers extends Initialization {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 		return driver.findElement(element).isDisplayed();
 	}
-
 }
