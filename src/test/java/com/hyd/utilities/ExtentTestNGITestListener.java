@@ -25,7 +25,9 @@ public class ExtentTestNGITestListener implements ITestListener{
 	
 	@Override 
 	public synchronized void onTestStart(ITestResult result) {
-		test.set(extent.createTest(result.getMethod().getMethodName()));
+		ExtentTest tmpTest = extent.createTest(result.getMethod().getMethodName());
+		tmpTest.assignAuthor("Harshavardhan Penumetcha");
+		test.set(tmpTest);
 	}
 	
 	@Override 
