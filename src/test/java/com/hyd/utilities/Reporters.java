@@ -15,7 +15,6 @@ public class Reporters {
 		if (extentReports == null) {
 			extentReports = new ExtentReports();
 			extentReports.setSystemInfo("os", System.getProperty("os.name"));
-			extentReports.setSystemInfo("Author", "Harshavardhan Penumetcha");
 			extentReports.attachReporter(CreateSparkReporter(filePath));
 		}
 		return extentReports;
