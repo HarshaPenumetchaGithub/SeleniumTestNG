@@ -1,7 +1,14 @@
 package com.hyd.utilities;
 
+import com.hyd.base.Initialization;
+
 import java.awt.Desktop;
 import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -42,5 +49,16 @@ public class Reporters {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static String captureScreenshot(String fileName) {
+		File sourceFile = ((TakesScreenshot)Initialization.driver).getScreenshotAs(OutputType.FILE);
+		File destFile = new File(fileName);
+		try {
+			FileUtils.copyFile(sourceFile, destFile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return destFile.getAbsolutePath();
 	}
 }
