@@ -1,5 +1,7 @@
 package com.hyd.base;
 
+import com.hyd.utilities.DataSuppliers;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,7 +17,7 @@ public class Initialization extends Reporters {
 	public static WebDriver driver;
 
 	public String username = "harsha_chanti37@yahoo.co.in";
-	public String password = "Spandana37&";
+	public String password = "";
 
 	public void setup(String browserName) {
 		switch (browserName.toLowerCase()) {
