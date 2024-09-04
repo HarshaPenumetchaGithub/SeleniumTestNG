@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Facebook]" guice-stage="DEVELOPMENT">
   <parameter name="browserName" value="Chrome"/>
+  <listeners>
+    <listener class-name="com.hyd.utilities.ExtentTestNGITestListener"/>
+  </listeners>
   <test thread-count="5" name="FacebookLogin(failed)">
     <classes>
       <class name="com.hyd.tests.LoginPageTests">
@@ -21,8 +24,8 @@
           <include name="verifyNavigationToSaved"/>
           <include name="verifyNavigationToMemories"/>
           <include name="verifyNavigationToFriends"/>
-          <include name="verifyHomePageTitle"/>
           <include name="closure"/>
+          <include name="verifyHomePageTitle"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- com.hyd.tests.HomePageTests -->
