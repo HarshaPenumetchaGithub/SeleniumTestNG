@@ -10,7 +10,7 @@ public class FriendsPage extends Helpers {
 
 	// Left Pane
 	public By friendsPageHeader = By.xpath("//h1[contains(text(), 'Friends')]");
-	public By friendPageHome = By.xpath("//span[contains(text(), 'Home')]");
+	public By friendsPageHome = By.xpath("//span[contains(text(), 'Home')]");
 	public By friendRequests = By.xpath("//span[contains(text(), 'Friend requests')]");
 	public By friendSuggestions = By.xpath("//span[contains(text(), 'Suggestions')]");
 	public By allFriends = By.xpath("//span[contains(text(), 'All friends')]");
@@ -26,7 +26,7 @@ public class FriendsPage extends Helpers {
 	}
 
 	public void navigateToFriendsPageHome() {
-		click(friendPageHome);
+		click(friendsPageHome);
 	}
 
 	public void navigateToFriendRequests() {
