@@ -1,7 +1,5 @@
 package com.hyd.base;
 
-import com.hyd.utilities.DataSuppliers;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -25,6 +23,7 @@ public class Initialization extends Reporters {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("disable-notifications");
+			options.addArguments("--start-maximized");
 			driver = new ChromeDriver(options);
 			break;
 
@@ -43,7 +42,7 @@ public class Initialization extends Reporters {
 			break;
 		}
 
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.get("https://facebook.com");
 	}
 
